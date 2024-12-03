@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Omid-Nejati/MedViTV2/blob/main/Fig/logo.jpg" alt="Logo" width="300"/>
+  <img src="https://github.com/Omid-Nejati/MedViTV2/blob/main/Fig/logo.jpg" alt="Logo" width="300" height="150" />
 </div>
 
 MedViT-V2: Hybrid Tranformer for Medical Image Classification
