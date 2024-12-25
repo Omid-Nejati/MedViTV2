@@ -1,6 +1,6 @@
-<div align="center">
-  <img src="https://github.com/Omid-Nejati/MedViTV2/blob/main/Fig/logo.jpg" alt="Logo" width="300" height="150" />
-</div>
+<h1 style="text-align: center; font-family: 'Comic Sans MS', cursive; font-size: 50px;">
+  Med<span style="font-size: 40px;">ViT</span>
+</h1>
 
 MedViT-V2: Hybrid Tranformer for Medical Image Classification
 ## Coming Soon ...
