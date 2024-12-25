@@ -1,8 +1,9 @@
-<h1 style="text-align: center; font-family: 'Comic Sans MS', cursive; font-size: 50px;">
-  Med<span style="font-size: 40px;">ViT</span>
-</h1>
+<div align="center">
+  <h1 style="font-family: Arial;">MedViT</h1>
+  <h3>MedViT-V2: Hybrid Tranformer for Medical Image Classification</h3>
+</div>
 
-MedViT-V2: Hybrid Tranformer for Medical Image Classification
+
 ## Coming Soon ...
 - Faster
 - More efficient
