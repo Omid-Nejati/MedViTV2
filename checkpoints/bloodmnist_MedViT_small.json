@@ -1,0 +1,46 @@
+{
+    "metrics": {
+        "clean_score": 0.03536977491961413,
+        "be": 1.4363117132863696,
+        "rbe": 1.5157011440826411
+    },
+    "be_scores": {
+        "pixelate": 1.2239152196341458,
+        "jpeg_compression": 0.42457484451156785,
+        "defocus_blur": 0.48962738517405163,
+        "motion_blur": 0.4318482678750552,
+        "brightness_up": 2.8842828296999388,
+        "brightness_down": 2.2028556343856076,
+        "contrast_up": 1.384393007643808,
+        "contrast_down": 2.5106487599377108,
+        "saturate": 3.556258441441951,
+        "stain_deposit": 0.22645533048346198,
+        "bubble": 0.4645691253627668
+    },
+    "rbe_scores": {
+        "pixelate": 0.912528556568239,
+        "jpeg_compression": 0.19745521402732016,
+        "defocus_blur": 0.3613589347573944,
+        "motion_blur": 0.2667140905911121,
+        "brightness_up": 3.2289915392961555,
+        "brightness_down": 2.286879875485874,
+        "contrast_up": 1.0901895686312524,
+        "contrast_down": 2.686024748779176,
+        "saturate": 5.381038709250506,
+        "stain_deposit": 0.03956033207495003,
+        "bubble": 0.22197101544707817
+    },
+    "raw_scores": {
+        "pixelate": 0.07313650979245834,
+        "jpeg_compression": 0.05933937445191466,
+        "defocus_blur": 0.1096755334697457,
+        "motion_blur": 0.07968430283542823,
+        "brightness_up": 0.20035077462730197,
+        "brightness_down": 0.17404267757965508,
+        "contrast_up": 0.07220111078631979,
+        "contrast_down": 0.19999999999999998,
+        "saturate": 0.12370651856182405,
+        "stain_deposit": 0.04197603040046771,
+        "bubble": 0.05992399883075126
+    }
+}

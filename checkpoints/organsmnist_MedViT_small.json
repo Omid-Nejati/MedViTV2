@@ -1,0 +1,52 @@
+{
+    "metrics": {
+        "clean_score": 0.1657414750198255,
+        "be": 0.7885676274765754,
+        "rbe": 1.0907953455955464
+    },
+    "be_scores": {
+        "pixelate": 0.529053242787199,
+        "jpeg_compression": 0.6913902212005236,
+        "gaussian_noise": 0.7857523572679955,
+        "speckle_noise": 0.7534708220531221,
+        "impulse_noise": 0.6218894348319562,
+        "shot_noise": 0.7732773151116342,
+        "gaussian_blur": 0.6984032079136284,
+        "brightness_up": 0.9773965051191317,
+        "brightness_down": 0.9986683660663337,
+        "contrast_up": 0.8210342070933668,
+        "contrast_down": 0.7605112450884016,
+        "gamma_corr_up": 1.046715107828918,
+        "gamma_corr_down": 0.7938171248332684
+    },
+    "rbe_scores": {
+        "pixelate": -0.005209480148806013,
+        "jpeg_compression": 0.7755621984539848,
+        "gaussian_noise": 0.8586046592908548,
+        "speckle_noise": 0.8109386898297977,
+        "impulse_noise": 0.5810540243752172,
+        "shot_noise": 0.8450420071040796,
+        "gaussian_blur": 0.7179156341563853,
+        "brightness_up": 1.5916325489985816,
+        "brightness_down": 1.6603350735904385,
+        "contrast_up": 1.5857466421214297,
+        "contrast_down": 1.0335933412178695,
+        "gamma_corr_up": 2.5353709014156895,
+        "gamma_corr_down": 1.1897532523365801
+    },
+    "raw_scores": {
+        "pixelate": 0.16537895094596122,
+        "jpeg_compression": 0.18665458253087117,
+        "gaussian_noise": 0.46273932253313693,
+        "speckle_noise": 0.4106491446697632,
+        "impulse_noise": 0.37376232015407274,
+        "shot_noise": 0.42678146595672367,
+        "gaussian_blur": 0.311951965560213,
+        "brightness_up": 0.3517163249122012,
+        "brightness_down": 0.3588082021071712,
+        "contrast_up": 0.23577659453948113,
+        "contrast_down": 0.23790642347343383,
+        "gamma_corr_up": 0.3166647785204486,
+        "gamma_corr_down": 0.2473547071485216
+    }
+}

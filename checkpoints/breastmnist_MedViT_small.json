@@ -1,0 +1,34 @@
+{
+    "metrics": {
+        "clean_score": 0.10256410256410253,
+        "be": 0.593313893184574,
+        "rbe": 0.5423434551732321
+    },
+    "be_scores": {
+        "pixelate": 0.42523979687793867,
+        "jpeg_compression": 0.40356370444494655,
+        "speckle_noise": 0.37425604502328363,
+        "motion_blur": 0.8760745785419225,
+        "brightness_up": 0.48908849770918733,
+        "brightness_down": 0.8980746418468839,
+        "contrast_down": 0.6868999878478551
+    },
+    "rbe_scores": {
+        "pixelate": 0.2962499618588474,
+        "jpeg_compression": 0.1171142839172277,
+        "speckle_noise": 0.17502093551860295,
+        "motion_blur": 1.0941395979984747,
+        "brightness_up": 0.3086870026525202,
+        "brightness_down": 1.3226089499853784,
+        "contrast_down": 0.4825834542815731
+    },
+    "raw_scores": {
+        "pixelate": 0.19615384615384615,
+        "jpeg_compression": 0.1205128205128205,
+        "speckle_noise": 0.14487179487179488,
+        "motion_blur": 0.22692307692307692,
+        "brightness_up": 0.1564102564102564,
+        "brightness_down": 0.18974358974358976,
+        "contrast_down": 0.10897435897435895
+    }
+}

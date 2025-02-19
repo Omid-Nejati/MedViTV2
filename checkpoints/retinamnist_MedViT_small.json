@@ -1,0 +1,37 @@
+{
+    "metrics": {
+        "clean_score": 0.42500000000000004,
+        "be": 0.7430384820689384,
+        "rbe": 1.1609541967078136
+    },
+    "be_scores": {
+        "pixelate": 0.7179653743103885,
+        "jpeg_compression": 0.658550812552303,
+        "gaussian_noise": 0.6803172754146,
+        "speckle_noise": 0.7098315022632631,
+        "defocus_blur": 0.6566994587499613,
+        "motion_blur": 0.6310275369577978,
+        "brightness_down": 0.9675281580643936,
+        "contrast_down": 0.9223877382387996
+    },
+    "rbe_scores": {
+        "pixelate": 0.16094232627929175,
+        "jpeg_compression": 0.18546625207606196,
+        "gaussian_noise": 0.3701754633445443,
+        "speckle_noise": 0.1898068338824531,
+        "defocus_blur": 0.20755816633778287,
+        "motion_blur": 0.14393824887731108,
+        "brightness_down": 5.347770992127241,
+        "contrast_down": 2.6819752907378227
+    },
+    "raw_scores": {
+        "pixelate": 0.43200000000000005,
+        "jpeg_compression": 0.44749999999999995,
+        "gaussian_noise": 0.479,
+        "speckle_noise": 0.43550000000000005,
+        "defocus_blur": 0.45200000000000007,
+        "motion_blur": 0.4465,
+        "brightness_down": 0.5654999999999999,
+        "contrast_down": 0.562
+    }
+}
