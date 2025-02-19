@@ -1,0 +1,58 @@
+{
+    "metrics": {
+        "clean_score": 0.18254364089775565,
+        "be": 0.4886299161804632,
+        "rbe": 0.6177479643403552
+    },
+    "be_scores": {
+        "pixelate": 0.3902005454070401,
+        "jpeg_compression": 0.477050690304457,
+        "gaussian_noise": 0.6325713637271592,
+        "speckle_noise": 0.5832895719500749,
+        "impulse_noise": 0.5504307094885635,
+        "shot_noise": 0.7043064697801442,
+        "defocus_blur": 0.3528404090972537,
+        "motion_blur": 0.3726472334030328,
+        "zoom_blur": 0.4437839552696063,
+        "brightness_up": 0.6835853484134806,
+        "brightness_down": 0.45357151272665297,
+        "contrast_up": 0.49549073007761324,
+        "contrast_down": 0.4586354082740668,
+        "black_corner": 0.31745879498204216,
+        "characters": 0.41358599980575955
+    },
+    "rbe_scores": {
+        "pixelate": 0.1488226427819516,
+        "jpeg_compression": 0.5737360596700758,
+        "gaussian_noise": 0.8198376081574459,
+        "speckle_noise": 0.7181595918612873,
+        "impulse_noise": 0.6423203361090831,
+        "shot_noise": 0.9271437220941853,
+        "defocus_blur": 0.2141844049697257,
+        "motion_blur": 0.2235012497578102,
+        "zoom_blur": 0.3999620983228409,
+        "brightness_up": 2.5253604212082434,
+        "brightness_down": 0.4437224661862994,
+        "contrast_up": 0.9649903093674271,
+        "contrast_down": 0.4604630389554842,
+        "black_corner": 0.16211596358621588,
+        "characters": 0.04189955207725312
+    },
+    "raw_scores": {
+        "pixelate": 0.1992019950124688,
+        "jpeg_compression": 0.22763092269326682,
+        "gaussian_noise": 0.48718204488778055,
+        "speckle_noise": 0.44847880299251874,
+        "impulse_noise": 0.44009975062344137,
+        "shot_noise": 0.5910224438902744,
+        "defocus_blur": 0.24728179551122195,
+        "motion_blur": 0.2335162094763092,
+        "zoom_blur": 0.23421446384039898,
+        "brightness_up": 0.3058354114713217,
+        "brightness_down": 0.2618453865336658,
+        "contrast_up": 0.21326683291770573,
+        "contrast_down": 0.24758104738154615,
+        "black_corner": 0.24099750623441393,
+        "characters": 0.18453865336658354
+    }
+}

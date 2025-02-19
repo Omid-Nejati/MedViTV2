@@ -1,0 +1,37 @@
+{
+    "metrics": {
+        "clean_score": 0.26328257191201354,
+        "be": 0.8586398488158369,
+        "rbe": 1.5377546236079094
+    },
+    "be_scores": {
+        "pixelate": 0.7234818296817765,
+        "jpeg_compression": 0.9474324712058334,
+        "impulse_noise": 0.6683654341604127,
+        "gaussian_blur": 0.851738207993005,
+        "brightness_up": 0.7959899504556074,
+        "brightness_down": 0.8786078389348638,
+        "contrast_up": 1.16274878094112,
+        "contrast_down": 0.8407542771540755
+    },
+    "rbe_scores": {
+        "pixelate": 0.9232058504187113,
+        "jpeg_compression": 1.8752856003473866,
+        "impulse_noise": 0.6648342505890152,
+        "gaussian_blur": 1.6452226723697416,
+        "brightness_up": 1.4893554766589479,
+        "brightness_down": 1.5107293027527957,
+        "contrast_up": 2.8972273255025476,
+        "contrast_down": 1.29617651022413
+    },
+    "raw_scores": {
+        "pixelate": 0.3564805414551607,
+        "jpeg_compression": 0.4813620981387479,
+        "impulse_noise": 0.5327453468697124,
+        "gaussian_blur": 0.40927241962774963,
+        "brightness_up": 0.3676099830795262,
+        "brightness_down": 0.4567174280879865,
+        "contrast_up": 0.5844247038917091,
+        "contrast_down": 0.451429780033841
+    }
+}

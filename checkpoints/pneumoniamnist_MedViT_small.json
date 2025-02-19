@@ -1,0 +1,52 @@
+{
+    "metrics": {
+        "clean_score": 0.04006410256410253,
+        "be": 0.38426740797456094,
+        "rbe": 0.24554324831577412
+    },
+    "be_scores": {
+        "pixelate": 0.17836426914153128,
+        "jpeg_compression": 0.1557727550397067,
+        "gaussian_noise": 0.2468538238141335,
+        "speckle_noise": 0.34116192830655123,
+        "impulse_noise": 0.1462220149253731,
+        "shot_noise": 0.2552029136316337,
+        "gaussian_blur": 0.43427230046948345,
+        "brightness_up": 0.8182613768961498,
+        "brightness_down": 0.5944700460829493,
+        "contrast_up": 0.5044843049327352,
+        "contrast_down": 0.41711663066954635,
+        "gamma_corr_up": 0.4237099644128113,
+        "gamma_corr_down": 0.47958397534668723
+    },
+    "rbe_scores": {
+        "pixelate": -0.00533428165007093,
+        "jpeg_compression": 0.019699140401146176,
+        "gaussian_noise": 0.2023212045169385,
+        "speckle_noise": 0.3180628272251309,
+        "impulse_noise": 0.0753588516746412,
+        "shot_noise": 0.20896551724137938,
+        "gaussian_blur": 0.455955334987593,
+        "brightness_up": 1.7485955056179794,
+        "brightness_down": 0.7066265060240964,
+        "contrast_up": -1.442307692307689,
+        "contrast_down": 0.43178973717146435,
+        "gamma_corr_up": -0.13392857142857592,
+        "gamma_corr_down": 0.6062581486310302
+    },
+    "raw_scores": {
+        "pixelate": 0.039423076923076915,
+        "jpeg_compression": 0.04358974358974357,
+        "gaussian_noise": 0.10897435897435895,
+        "speckle_noise": 0.11794871794871793,
+        "impulse_noise": 0.06698717948717947,
+        "shot_noise": 0.10480769230769231,
+        "gaussian_blur": 0.11858974358974357,
+        "brightness_up": 0.11987179487179489,
+        "brightness_down": 0.16538461538461538,
+        "contrast_up": 0.04807692307692304,
+        "contrast_down": 0.09903846153846152,
+        "gamma_corr_up": 0.04070512820512819,
+        "gamma_corr_down": 0.07980769230769232
+    }
+}
