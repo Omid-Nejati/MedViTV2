@@ -12,7 +12,9 @@
 </div>
 
 ## Train & Test --- Prepare data
-To train/evaluate MedViT families on 17 medical datasets follow ["Evaluation"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Evaluation.ipynb). 
+To **train or evaluate** MedViT models on **17 medical datasets**, follow this ["Evaluation"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Evaluation.ipynb). 
+
+⚠️ **Important:** This code also supports training **all TIMM models**.
 
 ## Visual Examples
 You can find a tutorial for visualizing the Grad-CAM heatmap of MedViT in this repository ["visualize"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Visualization.ipynb).
