@@ -16,7 +16,7 @@ import torchvision.datasets as dsets
 import torchvision.transforms as transforms
 from torchsummary import summary
 from datasets import build_dataset
-
+from distutils.util import strtobool
 from tqdm import tqdm
 import medmnist
 from medmnist import INFO, Evaluator
@@ -36,10 +36,10 @@ model_classes = {
 }
 
 model_urls = {
-    "MedViT_tiny": "https://dl.dropbox.com/scl/fi/sypllq0lbi16me2bwmsia/MedViT_tiny.pth?rlkey=fvwldo55u2gc82q5fslmrq46i&st=ny7lfskm&dl=0",
-    "MedViT_small": "https://dl.dropbox.com/scl/fi/gkxmt24g4fjum4a079o3e/MedViT_small.pth?rlkey=d3jlnvf10kjn09m840uxdub1h&st=dbmu69bk&dl=0",
-    "MedViT_base": "https://dl.dropbox.com/scl/fi/3qgxm4ss1j0bhyfjup77k/MedViT_base.pth?rlkey=f1vmqiba8cjl6nhszfjuhulo6&st=1s0xsuvk&dl=0",
-    "MedViT_large": "https://dl.dropbox.com/scl/fi/qkhxt4m1vturs02qc2504/MedViT_large.pth?rlkey=rczkqb7bslj1mksth0i42p50i&st=t6hkyug5&dl=0",
+    "MedViT_tiny": "https://dl.dropbox.com/scl/fi/496jbihqp360jacpji554/MedViT_tiny.pth?rlkey=6hb9froxugvtg8l639jmspxfv&st=p9ef06j8&dl=0",
+    "MedViT_small": "https://dl.dropbox.com/scl/fi/6nnec8hxcn5da6vov7h2a/MedViT_small.pth?rlkey=yf5twra1cv6ep2oqr79tbzyg5&st=rwx5hy8z&dl=0",
+    "MedViT_base": "https://dl.dropbox.com/scl/fi/q5c0u515dd4oc8j55bhi9/MedViT_base.pth?rlkey=5duw3uomnsyjr80wykvedjhas&st=incconx4&dl=0",
+    "MedViT_large": "https://dl.dropbox.com/scl/fi/owujijpsl6vwd481hiydd/MedViT_large.pth?rlkey=cx9lqb4a1288nv4xlmux13zoe&st=kcehwbrb&dl=0"
 }
 
 def download_checkpoint(url, path):
@@ -97,7 +97,7 @@ def train_mnist(epochs, net, train_loader, test_loader, optimizer, scheduler, lo
                 y_score = torch.cat((y_score, outputs.cpu()), 0)
                 
         y_score = y_score.detach().numpy()
-        evaluator = Evaluator(data_flag, 'test', size=224, root= './')
+        evaluator = Evaluator(data_flag, 'test', size=224, root='./data')
         metrics = evaluator.evaluate(y_score)
         
         val_accurate, _ = metrics
@@ -312,7 +312,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=24, help='Batch size for training.')
     parser.add_argument('--lr', type=float, default=0.0001, help='Learning rate.')
     parser.add_argument('--epochs', type=int, default=100, help='Number of training epochs.')
-    parser.add_argument('--pretrained', type=bool, default=False, help='Whether to use pretrained weights (True/False).')
+    parser.add_argument('--pretrained', type=lambda x: bool(strtobool(x)), default=False, help="Whether to use pretrained weights (True/False).")
     parser.add_argument('--checkpoint_path', type=str, default='./checkpoint/MedViT_tiny.pth', help='Path to the checkpoint file.')
 
     args = parser.parse_args()
