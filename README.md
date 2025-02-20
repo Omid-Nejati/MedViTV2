@@ -3,7 +3,7 @@
 
 <div align="center">
   <h1 style="font-family: Arial;">MedViT</h1>
-  <h3>MedViT-V2: Hybrid Tranformer for Medical Image Classification</h3>
+  <h3>MedViT-V2: Medical Image Classification with KAN-Integrated Transformers and Dilated Neighborhood Attention</h3>
 </div>
 
 
@@ -17,11 +17,40 @@ To train/evaluate MedViT families on 17 medical datasets follow ["Evaluation"](h
 ## Visual Examples
 You can find a tutorial for visualizing the Grad-CAM heatmap of MedViT in this repository ["visualize"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Visualization.ipynb).
 
+## 📊 Performance Overview
+Below is the performance summary of MedViT on various medical imaging datasets.  
+🔹 **Model weights will be available soon.**  
+
+| **Dataset** | **Task** | **Overall Accuracy (%)** |
+|:-----------:|:--------:|:-----------------------:|
+| **[PAD-UFES-20](https://data.mendeley.com/datasets/zr7vgbcyr2/1)** | Multi-Class (6) | 63.6 |
+| **[ISIC2018](https://challenge.isic-archive.com/data/)** | Multi-Class (7) | 77.1 |
+| **[Fetal-Planes-DB](https://zenodo.org/records/3904280)** | Multi-Class (6) | 95.3 |
+| **[CPN X-ray](https://data.mendeley.com/datasets/dvntn9yhd2/1)** | Multi-Class (3) | 98.2 |
+| **[Kvasir](https://datasets.simula.no/kvasir/)** | Multi-Class (8) | 82.8 |
+| **[ChestMNIST](https://medmnist.com/)** | Multi-Class (14) | 96.3 |
+| **[PathMNIST](https://medmnist.com/)** | Multi-Class (9) | 95.9 |
+| **[DermaMNIST](https://medmnist.com/)** | Multi-Class (7) | 78.1 |
+| **[OCTMNIST](https://medmnist.com/)** | Multi-Class (4) | 92.7 |
+| **[PneumoniaMNIST](https://medmnist.com/)** | Multi-Class (2) | 95.1 |
+| **[RetinaMNIST](https://medmnist.com/)** | Multi-Class (5) | 54.7 |
+| **[BreastMNIST](https://medmnist.com/)** | Multi-Class (2) | 88.2 |
+| **[BloodMNIST](https://medmnist.com/)** | Multi-Class (8) | 97.9 |
+| **[TissueMNIST](https://medmnist.com/)** | Multi-Class (8) | 69.9 |
+| **[OrganAMNIST](https://medmnist.com/)** | Multi-Class (11) | 95.8 |
+| **[OrganCMNIST](https://medmnist.com/)** | Multi-Class (11) | 93.5 |
+| **[OrganSMNIST](https://medmnist.com/)** | Multi-Class (11) | 82.4 |
+
 ## License
 MedViT is released under the [MIT License](LICENSE).
 
 💖🌸 If you find my GitHub repository useful, please consider giving it a star!🌟  
 
+## References
+* [FasterKAN](https://github.com/AthanasiosDelis/faster-kan)
+* [Natten](https://github.com/SHI-Labs/NATTEN)
+* [MedViTV1](https://github.com/Omid-Nejati/MedViT)
+  
 ## Citation
 ```bibtex
 @misc{manzari2025medical,
