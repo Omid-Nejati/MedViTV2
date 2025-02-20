@@ -1,6 +1,6 @@
 einops
 timm
-medmnist==3.0.1
+medmnist==3.0.2
 numpy
 pandas
 scikit-learn
@@ -12,3 +12,4 @@ fire
 torchattacks
 torch
 torchvision
+grad-cam

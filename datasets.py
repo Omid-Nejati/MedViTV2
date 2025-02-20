@@ -28,6 +28,10 @@ from zipfile import ZipFile
 import pandas as pd
 import shutil
 
+root_dir='data'
+if not os.path.exists(root_dir):
+            os.makedirs(root_dir)
+            
 class PADatasetDownloader:
     def __init__(self, root_dir='data', dataset_url='https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/zr7vgbcyr2-1.zip'):
         self.root_dir = root_dir
@@ -400,8 +404,8 @@ def build_dataset(args):
         DataClass = getattr(medmnist, info['python_class'])
         print("Number of channels: ", n_channels)
         print("Number of classes: ", nb_classes)
-        train_dataset = DataClass(split='train', transform=train_transform, download=True, as_rgb=True, size=224, mmap_mode='r')
-        test_dataset = DataClass(split='test', transform=test_transform, download=True, as_rgb=True, size=224, mmap_mode='r')
+        train_dataset = DataClass(split='train', transform=train_transform, download=True, as_rgb=True, root='./data', size=224, mmap_mode='r')
+        test_dataset = DataClass(split='test', transform=test_transform, download=True, as_rgb=True, root='./data', size=224, mmap_mode='r')
         return train_dataset, test_dataset, nb_classes
     else:
         raise NotImplementedError()
