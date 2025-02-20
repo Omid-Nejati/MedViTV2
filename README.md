@@ -1,5 +1,5 @@
 [![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2502.13693)
-[![Tutorial In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-research/maxvit/blob/main/Tutorials/Evaluation.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Evaluation.ipynb)
 
 <div align="center">
   <h1 style="font-family: Arial;">MedViT</h1>
