@@ -3,7 +3,7 @@
 
 <div align="center">
   <h1 style="font-family: Arial;">MedViT</h1>
-  <h3>MedViT-V2: Medical Image Classification with KAN-Integrated Transformers and Dilated Neighborhood Attention</h3>
+  <h3>MedViTV2: Medical Image Classification with KAN-Integrated Transformers and Dilated Neighborhood Attention</h3>
 </div>
 
 
