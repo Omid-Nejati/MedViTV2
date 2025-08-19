@@ -19,6 +19,30 @@ To **train or evaluate** MedViT models on **17 medical datasets**, follow this [
 ## Visual Examples
 You can find a tutorial for visualizing the Grad-CAM heatmap of MedViT in this repository ["visualize"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Visualization.ipynb).
 
+## Usage
+First, clone the repository locally:
+```
+git clone https://github.com/whai362/PVT.git](https://github.com/Omid-Nejati/MedViTV2.git
+cd /content/MedViTV2
+```
+Install PyTorch 2.5
+```
+pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu124
+```
+Then, install natten 0.17.3
+```
+pip install natten==0.17.3+torch250cu124 -f https://shi-labs.com/natten/wheels/
+```
+Also, install requirements
+```
+pip install -r requirements.txt
+```
+## Training
+To train MedViT-small on breastMNIST on a single gpu for 100 epochs run:
+```
+python main.py --model_name 'MedViT_small' --dataset 'breastmnist' --pretrained False
+```
+
 ## 📊 Performance Overview
 Below is the performance summary of MedViT on various medical imaging datasets.  
 🔹 **Model weights will be available soon.**  
