@@ -13,3 +13,4 @@ torchattacks
 torch
 torchvision
 grad-cam
+torchsummary
