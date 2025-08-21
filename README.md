@@ -47,25 +47,25 @@ python main.py --model_name 'MedViT_small' --dataset 'breastmnist' --pretrained 
 Below is the performance summary of MedViT on various medical imaging datasets.  
 🔹 **Model weights will be available soon.**  
 
-| **Dataset** | **Task** | **Overall Accuracy (%)** |
-|:-----------:|:--------:|:-----------------------:|
-| **[PAD-UFES-20](https://data.mendeley.com/datasets/zr7vgbcyr2/1)** | Multi-Class (6) | 63.6 |
-| **[ISIC2018](https://challenge.isic-archive.com/data/)** | Multi-Class (7) | 77.1 |
-| **[Fetal-Planes-DB](https://zenodo.org/records/3904280)** | Multi-Class (6) | 95.3 |
-| **[CPN X-ray](https://data.mendeley.com/datasets/dvntn9yhd2/1)** | Multi-Class (3) | 98.2 |
-| **[Kvasir](https://datasets.simula.no/kvasir/)** | Multi-Class (8) | 82.8 |
-| **[ChestMNIST](https://medmnist.com/)** | Multi-Class (14) | 96.3 |
-| **[PathMNIST](https://medmnist.com/)** | Multi-Class (9) | 95.9 |
-| **[DermaMNIST](https://medmnist.com/)** | Multi-Class (7) | 78.1 |
-| **[OCTMNIST](https://medmnist.com/)** | Multi-Class (4) | 92.7 |
-| **[PneumoniaMNIST](https://medmnist.com/)** | Multi-Class (2) | 95.1 |
-| **[RetinaMNIST](https://medmnist.com/)** | Multi-Class (5) | 54.7 |
-| **[BreastMNIST](https://medmnist.com/)** | Multi-Class (2) | 88.2 |
-| **[BloodMNIST](https://medmnist.com/)** | Multi-Class (8) | 97.9 |
-| **[TissueMNIST](https://medmnist.com/)** | Multi-Class (8) | 69.9 |
-| **[OrganAMNIST](https://medmnist.com/)** | Multi-Class (11) | 95.8 |
-| **[OrganCMNIST](https://medmnist.com/)** | Multi-Class (11) | 93.5 |
-| **[OrganSMNIST](https://medmnist.com/)** | Multi-Class (11) | 82.4 |
+| **Dataset** | **Task** | **MedViTV2-tiny (%)** |**MedViTV2-small (%)** |**MedViTV2-base (%)** |**MedViTV2-large (%)** |
+|:-----------:|:--------:|:-----------------------:|:------------------:|:---------------------:|:-----------------------:|
+| **[ChestMNIST](https://medmnist.com/)** | Multi-Class (14) | 96.3 (model)| 96.4 (model)| 96.4 (model)| 96.7 (model)| 
+| **[PathMNIST](https://medmnist.com/)** | Multi-Class (9) | 95.9 (model)| 96.5 (model)| 97.0 (model)| 97.7 (model)| 
+| **[DermaMNIST](https://medmnist.com/)** | Multi-Class (7) | 78.1 (model)| 79.2 (model)| 80.8 (model)| 81.7 (model)|
+| **[OCTMNIST](https://medmnist.com/)** | Multi-Class (4) | 92.7 (model)| 94.2 (model)| 94.4 (model)| 95.2 (model)|
+| **[PneumoniaMNIST](https://medmnist.com/)** | Multi-Class (2) | 95.1 (model)| 96.5 (model)| 96.9 (model)| 97.3 (model)|
+| **[RetinaMNIST](https://medmnist.com/)** | Multi-Class (5) | 54.7 (model)| 56.2 (model)| 57.5 (model)| 57.8 (model)|
+| **[BreastMNIST](https://medmnist.com/)** | Multi-Class (2) | 88.2 (model)| 89.5 (model)| 90.4 (model)| 91.0 (model)|
+| **[BloodMNIST](https://medmnist.com/)** | Multi-Class (8) | 97.9 (model)| 98.5 (model)| 98.5 (model)| 98.7 (model)|
+| **[TissueMNIST](https://medmnist.com/)** | Multi-Class (8) | 69.9 (model)| 70.5 (model)| 71.1 (model)| 71.6 (model)|
+| **[OrganAMNIST](https://medmnist.com/)** | Multi-Class (11) | 95.8 (model)| 96.6 (model)| 96.9 (model)| 97.3 (model)|
+| **[OrganCMNIST](https://medmnist.com/)** | Multi-Class (11) | 93.5 (model)| 95.0 (model)| 95.3 (model)| 96.1 (model)|
+| **[OrganSMNIST](https://medmnist.com/)** | Multi-Class (11) | 82.4 (model)| 83.9 (model)| 84.4 (model)| 85.1 (model)|
+| **[PAD-UFES-20](https://data.mendeley.com/datasets/zr7vgbcyr2/1)** | Multi-Class (6) | 63.6 (model)| |
+| **[ISIC2018](https://challenge.isic-archive.com/data/)** | Multi-Class (7) | 77.1 (model)|
+| **[CPN X-ray](https://data.mendeley.com/datasets/dvntn9yhd2/1)** | Multi-Class (3) | |  95.3 (model)|
+| **[Kvasir](https://datasets.simula.no/kvasir/)** | Multi-Class (8) |  |82.8 (model)| |
+| **[Fetal-Planes-DB](https://zenodo.org/records/3904280)** | Multi-Class (6) | | |  95.3 (model)|
 
 ## License
 MedViT is released under the [MIT License](LICENSE).
