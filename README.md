@@ -11,6 +11,8 @@
   <img src="https://github.com/Omid-Nejati/MedViT-V2/blob/main/Fig/cover.jpg" alt="figure4" width="40%" />
 </div>
 
+## 🔥 News 
+- **[2025.08.27]** We have released the pre-trained weights.
 ## Train & Test --- Prepare data
 To **train or evaluate** MedViT models on **17 medical datasets**, follow this ["Evaluation"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Evaluation.ipynb). 
 
@@ -45,7 +47,7 @@ python main.py --model_name 'MedViT_small' --dataset 'breastmnist' --pretrained 
 
 ## 📊 Performance Overview
 Below is the performance summary of MedViT on various medical imaging datasets.  
-🔹 **Model weights will be available soon.**  
+🔹 **Model weights are available now.**  
 
 | **Dataset** | **Task** | **MedViTV2-tiny (%)** |**MedViTV2-small (%)** |**MedViTV2-base (%)** |**MedViTV2-large (%)** |
 |:-----------:|:--------:|:-----------------------:|:------------------:|:---------------------:|:-----------------------:|
