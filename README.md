@@ -17,9 +17,29 @@
 To **train or evaluate** MedViT models on **17 medical datasets**, follow this ["Evaluation"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Evaluation.ipynb). 
 
 **Important:** This code also supports training **all TIMM models**.
+## Introduction
+Convolutional networks, transformers, hybrid models, and Mamba-based architectures have demonstrated strong performance across various medical image classification tasks. However, these methods were primarily designed to classify clean images using labeled data. In contrast, real-world clinical data often involve image corruptions that are unique to multi-center studies and stem from variations in imaging equipment across manufacturers. In this paper, we introduce the Medical Vision Transformer (MedViTV2), a novel architecture incorporating Kolmogorov-Arnold Network (KAN) layers into the transformer architecture for the first time, aiming for generalized medical image classification. We have developed an efficient KAN block to reduce computational load while enhancing the accuracy of the original MedViT. Additionally, to counteract the fragility of our MedViT when scaled up, we propose an enhanced Dilated Neighborhood Attention (DiNA), an adaptation of the efficient fused dot-product attention kernel capable of capturing global context and expanding receptive fields to scale the model effectively and addressing feature collapse issues. Moreover, a hierarchical hybrid strategy is introduced to stack our Local Feature Perception and Global Feature Perception blocks in an efficient manner, which balances local and global feature perceptions to boost performance. Extensive experiments on 17 medical image classification datasets and 12 corrupted medical image datasets demonstrate that MedViTV2 achieved state-of-the-art results in 27 out of 29 experiments with reduced computational complexity. MedViTV2 is 44\% more computationally efficient than the previous version and significantly enhances accuracy, achieving improvements of 4.6\% on MedMNIST, 5.8\% on NonMNIST, and 13.4\% on the MedMNIST-C benchmark. 
+<div style="text-align: center">
+<img src="https://github.com/Omid-Nejati/MedViT-V2/blob/main/Fig/ACC.png" title="MedViT-S" height="60%" width="60%">
+</div>
+Figure 1. Comparison between MedViTs (V1 and V2), MedMamba, and the baseline ResNets, in terms of Average
+Accuracy vs. FLOPs trade-off over all MedMNIST datasets. MedViTV2-T/S/L significantly improves average accu-
+racy by 2.6%, 2.5%, and 4.6%, respectively, compared to MedViTV1-T/S/L.</center>
+
+## Overview
+
+<div style="text-align: center">
+<img src="https://github.com/Omid-Nejati/MedViT-V2/blob/main/Fig/structure.png" title="MedViT-S" height="75%" width="75%">
+</div>
+Figure 2. Overall architecture of the proposed Medical Vision Transformer (MedViTV2).</center>
 
 ## Visual Examples
 You can find a tutorial for visualizing the Grad-CAM heatmap of MedViT in this repository ["visualize"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Visualization.ipynb).
+<br><br>
+![MedViT-V](https://github.com/Omid-Nejati/MedViT-V2/blob/main/Fig/visualize.png)
+<center>Figure 3. Grad-Cam heatmap visualization. We present heatmaps generated from the last three layers of MedViTV1-
+T, MedViTV2-T, MedViTV1-L, and MedViTV2-L, respectively. Specifically, we utilize the final GFP, LGP, and
+normalization layers in these models to produce the heatmaps using Grad-CAM.</center>
 
 ## Usage
 First, clone the repository locally:
