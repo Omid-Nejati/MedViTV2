@@ -48,7 +48,7 @@ normalization layers in these models to produce the heatmaps using Grad-CAM.</ce
 First, clone the repository locally:
 ```
 git clone https://github.com/whai362/PVT.git](https://github.com/Omid-Nejati/MedViTV2.git
-cd /content/MedViTV2
+cd MedViTV2
 ```
 Install PyTorch 2.5
 ```
