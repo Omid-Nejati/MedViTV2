@@ -13,6 +13,7 @@
 
 ## 🔥 News 
 - **[2025.08.27]** We have released the pre-trained weights.
+- **[2025.10.06]** Our paper accepted for publication in Applied Soft Computing.
 ## Train & Test --- Prepare data
 To **train or evaluate** MedViT models on **17 medical datasets**, follow this ["Evaluation"](https://github.com/Omid-Nejati/MedViTV2/blob/main/Tutorials/Evaluation.ipynb). 
 
