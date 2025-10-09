@@ -1,4 +1,5 @@
 [![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2502.13693)
+[![Paper](https://img.shields.io/badge/Elsevier-ASOC-blue)](https://doi.org/10.1016/j.asoc.2025.114045)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Omid-Nejati/MedViTV2/blob/main/Tutorials/Evaluation.ipynb)
 
 <div align="center">
