@@ -107,12 +107,11 @@ MedViT is released under the [MIT License](LICENSE).
 ## Citation
 ```bibtex
 @article{manzari2025medical,
-  title={Medical Image Classification with KAN-Integrated Transformers and Dilated Neighborhood Attention},
+  title={Medical image classification with kan-integrated transformers and dilated neighborhood attention},
   author={Manzari, Omid Nejati and Asgariandehkordi, Hojat and Koleilat, Taha and Xiao, Yiming and Rivaz, Hassan},
   journal={arXiv preprint arXiv:2502.13693},
   year={2025}
 }
-
 @article{manzari2023medvit,
   title={MedViT: a robust vision transformer for generalized medical image classification},
   author={Manzari, Omid Nejati and Ahmadabadi, Hamid and Kashiani, Hossein and Shokouhi, Shahriar B and Ayatollahi, Ahmad},
