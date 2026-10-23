@@ -10,12 +10,10 @@ from fasterkan import FasterKAN as KAN
 import torch
 import torch.utils.checkpoint as checkpoint
 from einops import rearrange
-from timm.models.layers import DropPath, trunc_normal_
-from timm.models.registry import register_model
+from timm.layers import DropPath, trunc_normal_
+from timm.models import register_model
 from torch import nn
-import natten
 from natten import NeighborhoodAttention2D as NeighborhoodAttention
-is_natten_post_017 = hasattr(natten, "context")
 #from utils import merge_pre_bn
 
 
@@ -295,17 +293,16 @@ class LFP(nn.Module):
         self.patch_embed = PatchEmbed(in_channels, out_channels, stride)
         #self.mhca = MHCA(out_channels, head_dim)
         self.norm1 = norm_layer(out_channels)
-        extra_args = {"rel_pos_bias": True} if is_natten_post_017 else {"bias": True}
+        # NATTEN >= 0.20: attn_drop and rel_pos_bias are no longer
+        # constructor arguments. Input/output use channels-last (B, H, W, C).
         self.attn = NeighborhoodAttention(
-            out_channels,
+            embed_dim=out_channels,
+            num_heads=out_channels // head_dim,
             kernel_size=7,
-            dilation=None,
-            num_heads= (out_channels // head_dim),
+            dilation=1,
             qkv_bias=True,
             qk_scale=None,
-            attn_drop=drop,
-            proj_drop=0.0,
-            **extra_args,
+            proj_drop=drop,
         )
         self.attention_path_dropout = DropPath(path_dropout)
 
@@ -325,11 +322,14 @@ class LFP(nn.Module):
 
     def forward(self, x):
         x = self.patch_embed(x)
-        b, c, h, w = x.shape
         shortcut = x
         x = self.norm1(x)
-        x = self.attn(x.reshape(b, h, w, c))
-        x = shortcut + self.attention_path_dropout(x.reshape(b, c, h, w))
+        # Convert NCHW -> NHWC without mixing spatial/channel values.
+        x = self.attn(x.permute(0, 2, 3, 1).contiguous())
+        # Convert NHWC -> NCHW for the convolutional residual path.
+        x = shortcut + self.attention_path_dropout(
+            x.permute(0, 3, 1, 2).contiguous()
+        )
         if not torch.onnx.is_in_onnx_export() and not self.is_bn_merged:
             out = self.norm2(x)
         else:
